@@ -1,0 +1,13 @@
+<p>This is the partial for view a with backend.</p>
+<p>
+  user: {{ctrl.user}}
+</p>
+<form name="myForm" ng-submit="submit()">
+  Name: <input type="text" name="name" ng-model="user.name" required>
+  Password: <input type="text" name="pw" ng-model="user.password" required>
+  <button type="submit" name="button">Create New User</button>
+</form>
+<p>
+  LoggedIn User: {{user.getFirstName()}}
+</p>
+<button type="button" name="button" ng-click="login()">Login</button>
